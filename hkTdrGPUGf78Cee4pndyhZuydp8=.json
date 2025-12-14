@@ -1,43 +1,60 @@
 {
     "pluginStatus": true,
-    "isPaid": true,
-    "communityName": "itsnixk_exe - 659864108895698970",
-    "betaCommunity": false,
+    "communityName": "SouthValley RP",
+    "betaCommunity": true,
     "features": {
         "inGameInterface": true,
         "rangeSimulation": true,
         "emergencyHotline": true
     },
     "talkAroundRange": 1500,
-    "betaServerGroups": [""],
-    "dispatchServerGroups": ["793","717","726"],
+    "betaServerGroups": [
+        ""
+    ],
+    "dispatchServerGroups": [
+        "717",
+        "726",
+        "793"
+    ],
     "dispatchAdvancedServerGroups": [],
     "dispatchNameTags": [
         "(P)",
         "(S)",
         "(T)",
         "(FIRE)",
-        "(SA)",
         "(QA)",
-        "(911)",
-        "(TAC)",
         "(EVAL)",
+        "(MS)",
         "[P]",
         "[S]",
         "[T]",
         "[FIRE]",
-        "[SA]",
         "[QA]",
-        "[911]",
-        "[TAC]",
-        "[EVAL]"
+        "[EVAL]",
+        "[MS]"
     ],
-    "civilianServerGroups": [""],
-    "civChannels": [0],
-    "radioSystems": [569, 928],
-    "rtoChannels": [947, 607],
+    "civilianServerGroups": [
+        "718",
+        "719",
+        "720",
+        "727"
+    ],
+    "civChannels": [
+        609,
+        611,
+        949,
+        950
+    ],
+    "radioSystems": [
+        569,
+        928
+    ],
+    "rtoChannels": [
+        307,
+        947
+    ],
     "radioChannels": [
-         {
+        {
             "id": 1,
             "name": "SW Main",
             "soundName": "Statewide Main",
@@ -51,6 +68,18 @@
         },
         {
             "id": 2,
+            "name": "SW Reserve",
+            "soundName": "Statewide Reserve",
+            "type": "LEO",
+            "coloredName": "[color=#009a00]SW Reserve[/color]",
+            "talkEnforcement": true,
+            "talkAround": false,
+            "scannable": true,
+            "encrypted": false,
+            "permission": 1
+        },
+        {
+            "id": 3,
             "name": "L/S Main",
             "soundName": "Los Santos Main",
             "type": "LEO",
@@ -62,7 +91,19 @@
             "permission": 1
         },
         {
-            "id": 3,
+            "id": 4,
+            "name": "L/S Reserve",
+            "soundName": "Los Santos Reserve",
+            "type": "LEO",
+            "coloredName": "[color=#4aaac8]L/S Reserve[/color]",
+            "talkEnforcement": true,
+            "talkAround": false,
+            "scannable": true,
+            "encrypted": false,
+            "permission": 1
+        },
+        {
+            "id": 5,
             "name": "Car/Car",
             "soundName": "Car To Car",
             "type": "LEO",
@@ -75,7 +116,7 @@
             "permission": 1
         },
         {
-            "id": 4,
+            "id": 6,
             "name": "B/C Main",
             "soundName": "Blaine County Main",
             "type": "LEO",
@@ -87,7 +128,19 @@
             "permission": 1
         },
         {
-            "id": 5,
+            "id": 7,
+            "name": "B/C Reserve",
+            "soundName": "Blaine County Reserve",
+            "type": "LEO",
+            "coloredName": "[color=#00b400]B/C Reserve[/color]",
+            "talkEnforcement": true,
+            "talkAround": false,
+            "scannable": true,
+            "encrypted": false,
+            "permission": 1
+        },
+        {
+            "id": 8,
             "name": "Fire Ops",
             "soundName": "Fire Ops",
             "type": "LEO",
@@ -99,7 +152,7 @@
             "permission": 1
         },
         {
-            "id": 6,
+            "id": 9,
             "name": "Tac 1",
             "soundName": "Tac 1",
             "type": "LEO",
@@ -111,7 +164,7 @@
             "permission": 1
         },
         {
-            "id": 7,
+            "id": 10,
             "name": "Tac 2",
             "soundName": "Tac 2",
             "type": "LEO",
@@ -123,7 +176,7 @@
             "permission": 1
         },
         {
-            "id": 8,
+            "id": 11,
             "name": "Private 1",
             "soundName": "Private 1",
             "type": "LEO",
@@ -135,7 +188,7 @@
             "permission": 1
         },
         {
-            "id": 9,
+            "id": 12,
             "name": "Training 1",
             "soundName": "Training 1",
             "type": "LEO",
@@ -147,7 +200,7 @@
             "permission": 1
         },
         {
-            "id": 10,
+            "id": 13,
             "name": "Training 2",
             "soundName": "Training 2",
             "type": "LEO",
@@ -159,7 +212,31 @@
             "permission": 1
         },
         {
-            "id": 11,
+            "id": 14,
+            "name": "Services",
+            "soundName": "Services",
+            "type": "LEO",
+            "coloredName": "[color=brown]Services[/color]",
+            "talkEnforcement": true,
+            "talkAround": false,
+            "scannable": true,
+            "encrypted": true,
+            "permission": 1
+        },
+        {
+            "id": 15,
+            "name": "San Andreas ATC",
+            "soundName": "A T C",
+            "type": "announce",
+            "coloredName": "[color=pink]Announcements[/color]",
+            "talkEnforcement": true,
+            "talkAround": false,
+            "scannable": true,
+            "encrypted": false,
+            "permission": 1
+        },
+        {
+            "id": 16,
             "name": "Announcements",
             "soundName": "Announcements",
             "type": "announce",
@@ -184,25 +261,41 @@
     },
     "permissions": {
         "permBasic": {
-            "serverGroupList": ["731", "734"]
+            "serverGroupList": [
+                "731",
+                "734"
+            ]
         },
         "permExtra": {
-            "serverGroupList": [""]
+            "serverGroupList": [
+                ""
+            ]
         },
         "permSit": {
-            "serverGroupList": ["735"]
+            "serverGroupList": [
+                "735"
+            ]
         },
         "permStaff": {
-            "serverGroupList": ["736"]
+            "serverGroupList": [
+                "736"
+            ]
         },
         "permSenior": {
-            "serverGroupList": ["737"]
+            "serverGroupList": [
+                "737"
+            ]
         },
         "permAdmin": {
-            "serverGroupList": ["738","739"]
+            "serverGroupList": [
+                "738",
+                "739"
+            ]
         },
         "permSuper": {
-            "serverGroupList": ["740"]
+            "serverGroupList": [
+                "740"
+            ]
         }
     }
 }
